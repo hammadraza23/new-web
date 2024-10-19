@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website - Contact</title>
+</head>
+<body>
+    <center>
+    <header>
+        <h1>Contact Us</h1>
+        <nav style="font-size: 20px;">
+            <a href="index.html">Home</a> |
+            <a href="menu.html">Menu</a> |
+            <a href="recipes.html">Recipes</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <h1>Food Submission Form</h1>
+    <form action="submit_food.php" method="post" enctype="multipart/form-data">
+        <label for="foodName">Food Item Name:</label><br>
+        <input type="text" id="foodName" name="foodName" required><br><br>
+
+        <label for="foodDescription">Description:</label><br>
+        <textarea id="foodDescription" name="foodDescription" rows="4" required></textarea><br><br>
+
+        <label for="foodImage">Upload Image:</label><br>
+        <input type="file" id="foodImage" name="foodImage" accept="image/*" required><br><br>
+
+        <input type="submit" value="Submit">
+    </form> <br><br>
+
+    <footer>
+        <p>&copy; 2024 Foodie's Paradise. All Rights Reserved.</p>
+        <p>Contact us: foodies@example.com | Phone: +123456789</p>
+    </footer>
+
+</center>
+</body>
+</html>
